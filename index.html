@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'nav-back-color': 'rgb(249, 247, 243)',
+                        'green-color': 'rgba(180, 244, 97)',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class="bg-nav-back-color">
+            <div class="container mx-auto">
+                <div class="navbar pt-3 pb-6">
+                    <div class="navbar-start">
+                        <a class="btn bg-green-color font-bold lg:px-6 lg:py-1">Blog</a>
+                    </div>
+                    <div class="navbar-center">
+                        <img src="assets/logo.png" alt="">
+                        <a class="btn btn-ghost lg:text-xl font-bold">Donate Bangladesh</a>
+                    </div>
+                    <div class="navbar-end lg:flex  lg:gap-3">
+                        <img src="assets/coin.png" alt="">
+                        <p class="font-normal lg:font-semibold">5500</p>
+                        <h4 class="font-normal lg:font-semibold">BDT</h4>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- btn-section start-->
+        <section class="container mx-auto flex justify-center gap-4 pt-8">
+            <div class="">
+                <a class="btn bg-green-color font-bold px-6 py-1">Donation</a>
+
+            </div>
+            <div class="">
+                <a class="btn font-bold px-6 py-1">History</a>
+
+            </div>
+        </section>
+        <!-- btn-section end-->
+    </header>
+    <main>
+        <!-- donation 1 -->
+        <!-- <section class="w-3/5 mx-auto my-5 border border-gray-900-500 rounded-xl">
+            <div class="card lg:card-side m-5 border border-blue-600 ">
+                <figure>
+                    <img class="" src="assets/noakhali.png" alt="">
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
+                    <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                    <div class="card-actions">
+                        <button class="btn btn-primary">Listen</button>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- donation 1 -->
+        <!-- donation 2 -->
+        <section class="container mx-auto my-5 border border-gray-500 rounded-xl">
+            <div class="flex flex-col md:flex-col lg:flex-row m-5 border border-blue-600">
+                <div class="flex-shrink-0">
+                    <img class="h-full w-full object-cover" src="assets/noakhali.png" alt="">
+                </div>
+                <div class="p-5 md:pl-10 flex flex-col justify-center">
+                    <div class="justify-start">
+                        <button class="btn btn-primary">Listen</button>
+                      </div>
+                    <h2 class="text-2xl font-bold mb-3">Donate for Flood at Noakhali, Bangladesh</h2>
+                    <p class="mb-4">
+                        The recent floods in Noakhali have caused significant damage to homes and infrastructure. Your donation will help provide essential supplies and support to those affected by this disaster. Every contribution, big or small, makes a difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
+                    </p>
+                    <button class=" bg-green-color font-bold rounded-lg py-2">Donate Now</button>
+                    
+                </div>
+            </div>
+        </section>
+        <!-- donation 2 -->
+    </main>
+</body>
+
+</html>
