@@ -1,11 +1,25 @@
-// console.log('sss')
-// const historyTab = document.getElementById('history');
-//     historyTab.addEventListener('click', function(){
-        
-//         historyTab.classList.add("bg-green-color");
-//         historyTab.classList.remove("bg-gray-200");
-        
-//     });
+
+const historyTab = document.getElementById('history');
+const donationTab = document.getElementById('donation-item')
+historyTab.addEventListener('click', function () {
+
+    historyTab.classList.add("bg-green-color");
+
+    donationTab.classList.remove("bg-green-color");
+    donationTab.classList.add("bg-gray-200");
+
+});
+
+const donationTabBack = document.getElementById('donation-item');
+const historyTabBack = document.getElementById('history')
+donationTabBack.addEventListener('click', function () {
+
+    donationTabBack.classList.add("bg-green-color");
+
+    historyTabBack.classList.remove("bg-green-color");
+    historyTabBack.classList.add("bg-gray-200");
+
+});
 
 document.getElementById('donate-noakhali')
     .addEventListener('click', function () {
@@ -27,7 +41,7 @@ document.getElementById('donate-noakhali')
             const balance = getTextFieldValueById('balance');
             const newBalance = balance - addDonation1;
             document.getElementById('balance').innerText = newBalance;
-
+            document.getElementById('donate-noakhali-input').value = '';
         }
         // history
 
@@ -41,8 +55,10 @@ document.getElementById('donate-noakhali')
         const historyContainer = document.getElementById('history-item');
         historyContainer.insertBefore(historyItem, historyContainer.firstChild);
         // 
+
         alert('added donation')
-       
+        
+        
         return
 
     });
@@ -51,13 +67,13 @@ document.getElementById('donate-feni')
     .addEventListener('click', function () {
         // console.log('jjjj');
         const addDonation2 = getInputFieldValueById('donate-feni-input');
-       
+
         if (isNaN(addDonation2) || addDonation2 <= 0) {
             alert('Failed to add donation');
             return;
         }
         else {
-            
+
             const balance2 = getTextFieldValueById('donate-add-feni');
             const newBalance2 = balance2 + addDonation2;
             // console.log(newBalance1)
@@ -65,7 +81,7 @@ document.getElementById('donate-feni')
             const balance = getTextFieldValueById('balance');
             const newBalance = balance - addDonation2;
             document.getElementById('balance').innerText = newBalance;
-
+            document.getElementById('donate-feni-input').value = '';
         }
         // history
 
@@ -80,7 +96,7 @@ document.getElementById('donate-feni')
         historyContainer.insertBefore(historyItem, historyContainer.firstChild);
         // 
         alert('added donation')
-       
+
         return
 
     });
@@ -88,13 +104,13 @@ document.getElementById('donate-quota')
     .addEventListener('click', function () {
         // console.log('jjjj');
         const addDonation3 = getInputFieldValueById('donate-quota-input');
-       
+
         if (isNaN(addDonation3) || addDonation3 <= 0) {
             alert('Failed to add donation');
             return;
         }
         else {
-            
+
             const balance3 = getTextFieldValueById('donate-add-quota');
             const newBalance3 = balance3 + addDonation3;
             // console.log(newBalance1)
@@ -102,7 +118,7 @@ document.getElementById('donate-quota')
             const balance = getTextFieldValueById('balance');
             const newBalance = balance - addDonation3;
             document.getElementById('balance').innerText = newBalance;
-
+            document.getElementById('donate-quota-input').value = '';
         }
         // history
 
@@ -117,10 +133,10 @@ document.getElementById('donate-quota')
         historyContainer.insertBefore(historyItem, historyContainer.firstChild);
         // 
         alert('added donation')
-       
+
         return
 
     });
 
-    
+
 

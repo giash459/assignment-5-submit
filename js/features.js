@@ -4,6 +4,7 @@
 document.getElementById('donation-item')
 .addEventListener('click', function(){
     showSectionId('donation-list')
+    
 });
 
 document.getElementById('history')
@@ -23,4 +24,10 @@ document.getElementById('home')
 
 
     document.getElementById('home').classList.add('hidden')
+
+
 });
+
+//repo link : https://github.com/giash459/assignment-5-submit
+
+// live link : https://giash459.github.io/assignment-5-submit/
